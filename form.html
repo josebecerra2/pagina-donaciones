@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Donación</title>
+</head>
+<body>
+    <h1>Formulario de Donación</h1>
+    <form id="donation-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="amount">Monto:</label>
+        <input type="number" id="amount" name="amount" required min="1">
+        <label for="campaign">Campaña:</label>
+        <select id="campaign" name="campaign">
+            <option value="escuela">Construcción de una Escuela</option>
+            <option value="multicancha">Construcción de una Multicancha</option>
+            <option value="desayuno">Donación de Desayuno</option>
+        </select>
+        <button type="submit">Donar</button>
+    </form>
+    <a href="index.html">Volver a la Página Principal</a>
+    <script src="app.js"></script>
+</body>
+</html>
